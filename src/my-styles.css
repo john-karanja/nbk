@@ -5,15 +5,7 @@
 p {
   letter-spacing: 0.1px;
 }
-.top-menu {
-  background-color: var(--NBK-Brown);
-  color: var(--NBK-Yellow);
-}
-.top-menu a,
-.main-menu a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
+
 .main-menu-ul ul li a.active {
   color: var(--NBK-Yellow);
   font-family: "Montserrat", sans-serif;
@@ -29,25 +21,25 @@ p {
   width: 100%;
   left: 0;
 }
-header {
+/* header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/header-img.jpg");
   min-height: 450px;
   background-size: cover;
-}
-header h1 {
+} */
+/* header h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: var(--NBK-Yellow);
 }
 .header-content {
   background-color: rgb(48, 18, 11, 0.8);
-}
+} */
 .header-content p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-.header-content h1:before {
+/* .header-content h1:before {
   content: "";
   position: absolute;
   height: 80px;
@@ -55,4 +47,35 @@ header h1 {
   background: var(--NBK-Yellow);
   left: -32px;
   top: 9px;
+} */
+/* SideNav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 001;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

@@ -6,6 +6,7 @@
             clifford: '#da373d',
             'nbk-brown': '#3c251f',
             'nbk-yellow': '#FFBA00',
+            'nbk-yellow-text': '#FFAF2E'
           },
           fontFamily: {
             'poppins': ["Poppins", 'sans-serif'],

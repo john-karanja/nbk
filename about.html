@@ -18,9 +18,9 @@
   </head>
   <body>
     <div
-      class="top-menu flex items-center justify-end min-h-[70px] text-[0.75rem] py-4"
+      class="top-menu bg-[#3c251f] text-[#ffaf2e] text-nbk-yellow-text  flex items-center justify-end min-h-[70px] text-[0.75rem] py-4 max-[1050px]:hidden"
     >
-      <div class="container mx-auto">
+      <div class="container max-[1400px]:px-6 mx-auto">
         <ul class="flex gap-5 justify-end">
           <li><a href="#">Investor Relations</a></li>
           <li><a href="#">National Online Banking</a></li>
@@ -32,14 +32,52 @@
         </ul>
       </div>
     </div>
+    <!-- SideNav -->
     <div
-      class="main-menu min-h-[100px] flex items-center justify-center text-[0.89rem]"
+      class="main-menu flex items-center justify-center text-[0.85rem]"
     >
-      <div class="container mx-auto flex items-center justify-between">
+      <div id="mySidenav" class="sidenav text-sm font-montserrat font-medium">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="sidenav-top bg-white px-10 py-6">
+          <ul class="text-nbk-brown font-medium">
+            <li class="my-2"><a href="#">Home</a></li>
+            <hr>
+            <li class="my-2"><a href="#">About Bancassurance</a></li>
+            <hr>
+            <li class="my-2"><a href="#">Personal Solutions</a></li>
+            <hr>
+            <li class="my -2"><a href="#">Corporate Solutions</a></li>
+          </ul> 
+        </div>
+ 
+        <div class="sidenav-bottom bg-nbk-brown text-nbk-yellow-text text-sm font-montserrat font-medium py-4 h-full">
+          <ul class= "px-10">
+            <li class="my-2"><a href="#">Investor Relations</a></li>
+            <hr>
+            <li class="my-2"><a href="#">National Online Banking</a></li>
+            <hr>
+            <li class="my-2"><a href="#">NBK Bancassurance Intermediary Limited</a></li>
+            <hr>
+            <li class="my-2"><a href="#">Property Sales</a></li>
+            <hr>
+            <li class="my-2"><a href="#"> Natbank Investments </a></li>
+            <hr>
+            <li class="my-2"><a href="#">Treasury Services </a></li>
+            <hr>
+            <li class="my-2"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End SideNav -->
+    
+      <div class="container max-[1400px]:px-6 max-[640px]:px-6 mx-auto flex items-center justify-between py-4 text-[0.9rem]">
         <div class="logo-container">
           <img src="/images/logo.svg" alt="Logo" class="w-[165px]" />
         </div>
-        <div class="main-menu-ul">
+        <div class="main-menu-ul max-[1050px]:hidden">
           <ul class="flex gap-8">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About Bancassurance</a></li>
@@ -52,7 +90,7 @@
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
-                  stroke="currentColor"
+                  stroke="#FFAA00"
                   class="size-6"
                 >
                   <path
@@ -65,16 +103,37 @@
             </li>
           </ul>
         </div>
+        <div class="flex items-center gap-8 min-[1050px]:hidden">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#FFAA00"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </a>
+          <span class="" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+
       </div>
     </div>
     <header
-      class="flex items-center justify-start] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/header-img-2.jpg')] bg-cover bg-no-repeat"
+      class="flex items-center justify-start] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/header-img-2.jpg')] bg-cover bg-no-repeat min-h[450px]"
     >
-      <div class="container mx-auto">
+      <div class="container max-[1400px]:px-6 mx-auto">
         <div
-          class="header-content flex justify-center items-center flex-col max-w-[500px] min-h-[246px] p-8"
+          class="header-content flex justify-center items-start flex-col max-w-[500px] min-h-[246px] p-8 bg-nbk-brown/[0.8]"
         >
-          <h1 class="text-[2rem] relative">
+          <h1 class="text-[2rem]  max-[768px]:text-[1.5rem] font-poppins font-extrabold text-nbk-yellow-text before:content[''] relative before:absolute before:h-[80px] before:w-[6px] before:bg-[#ffaf2e] before:left-[-32px] before:top[15px] ">
             About<br />
             Bancassurance
           </h1>
@@ -83,8 +142,8 @@
     </header>
     <!-- About Section -->
     <section class="About mt-10">
-      <div class="container mx-auto">
-        <div class="about-container grid grid-cols-[60%,40%] items-center">
+      <div class="container max-[1400px]:px-6 mx-auto">
+        <div class="about-container grid grid-cols-[60%,40%] max-[800px]:grid-cols-1 items-center">
           <div class="about-content">
             <h2 class="font-poppins font-bold text-2xl text-nbk-brown">
               About Bancassurance
@@ -122,7 +181,7 @@
             </div>
           </div>
           <div
-            class="about-form bg-nbk-brown p-6 text-white max-w-[80%] ml-auto"
+            class="about-form bg-nbk-brown p-6 text-white max-w-[80%] ml-auto max-[800px]:mr-auto max-[800px]:w-full mt-8"
           >
             <h3 class="font-poppins font-bold text-base mb-6">
               Interested in About Bancassurance or have a question?
@@ -187,59 +246,294 @@
         </div>
       </div>
     </section>
-     <!-- Personal Solutions -->
-     <section class="section py-20 personal-solutions mt-8">
-        <div class="container mx-auto">
-          <div class="img-grid grid grid-cols-four-columns gap-4 mt-14">
-            <div
-              class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
-            >
-            <img src="images/mission.svg" alt="">
-              <div class="img-content text-center">
-                <h3 class="font-poppins font-bold text-base mb-4 mt-6">
-                    Our Mission
-                </h3>
-                <p class="font-montserrat font-normal text-sm leading-relaxed">We are dedicated to care and skill in providing competitive insurance and risk management solutions to our customers, providing attractive opportunities to our employees and improving our stakeholders’ value.</p>
-              </div>
+    <!-- Personal Solutions -->
+    <section class="section py-10 personal-solutions">
+      <div class="container max-[1400px]:px-6 mx-auto">
+        <div class="img-grid grid grid-cols-four-columns gap-4 mt-14">
+          <div
+            class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
+          >
+            <img src="images/mission.svg" alt="" />
+            <div class="img-content text-center">
+              <h3 class="font-poppins font-bold text-base mb-4 mt-6">
+                Our Mission
+              </h3>
+              <p class="font-montserrat font-normal text-sm leading-relaxed">
+                We are dedicated to care and skill in providing competitive
+                insurance and risk management solutions to our customers,
+                providing attractive opportunities to our employees and
+                improving our stakeholders’ value.
+              </p>
             </div>
-            <div
-              class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
-            >
-            <img src="images/vision.svg" alt="">
-              <div class="img-content text-center">
-                <h3 class="font-poppins font-bold text-base mb-4 mt-6">
-                    Our Vision
-                </h3>
-                <p class="font-montserrat font-normal text-sm leading-relaxed">To be the insurance intermediary of choice for our customers.</p>
-              </div>
+          </div>
+          <div
+            class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
+          >
+            <img src="images/vision.svg" alt="" />
+            <div class="img-content text-center">
+              <h3 class="font-poppins font-bold text-base mb-4 mt-6">
+                Our Vision
+              </h3>
+              <p class="font-montserrat font-normal text-sm leading-relaxed">
+                To be the insurance intermediary of choice for our customers.
+              </p>
             </div>
-            <div
-              class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
-            >
-            <img src="images/purpose.svg" alt="">
-              <div class="img-content text-center">
-                <h3 class="font-poppins font-bold text-base mb-4 mt-6">
-                    Our Purpose
-                </h3>
-                <p class="font-montserrat font-normal text-sm leading-relaxed">We believe that insurance is one of the best ways of protecting your wealth. Our solutions provide our customers with an opportunity to manage and mitigate against any perils.</p>
-              </div>
+          </div>
+          <div
+            class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
+          >
+            <img src="images/purpose.svg" alt="" />
+            <div class="img-content text-center">
+              <h3 class="font-poppins font-bold text-base mb-4 mt-6">
+                Our Purpose
+              </h3>
+              <p class="font-montserrat font-normal text-sm leading-relaxed">
+                We believe that insurance is one of the best ways of protecting
+                your wealth. Our solutions provide our customers with an
+                opportunity to manage and mitigate against any perils.
+              </p>
             </div>
-            <div
-              class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
-            >
-            <img src="images/promise.svg" alt="">
-              <div class="img-content text-center">
-                <h3 class="font-poppins font-bold text-base mb-4 mt-6">
-                    Our Customer Promise
-                </h3>
-                <p class="font-montserrat font-normal text-sm leading-relaxed">To put our customers firmly at the forefront of everything we do and deliver on our promises.</p>
-              </div>
+          </div>
+          <div
+            class="img-container flex flex-col justify-start items-center p-4 bg-[#F5F0F0] p-6 rounded-[5px]"
+          >
+            <img src="images/promise.svg" alt="" />
+            <div class="img-content text-center">
+              <h3 class="font-poppins font-bold text-base mb-4 mt-6">
+                Our Customer Promise
+              </h3>
+              <p class="font-montserrat font-normal text-sm leading-relaxed">
+                To put our customers firmly at the forefront of everything we do
+                and deliver on our promises.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-  
+      </div>
+    </section>
+        <!-- Forex -->
+        <section class="section bg-[#F9EBE8] py-5">
+          <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
+            <div
+              class="heading-section flex flex-wrap gap-x-1.5 justify-between items-center"
+            >
+              <h2 class="font-poppins text-xl font-bold">FOREX</h2>
+              <ul class="flex gap-5 flex-wrap">
+                <li class="font-montserrat text-[0.85rem]">
+                  <span class="mr-1 font-bold">USD:</span>Buying: 86.17
+                </li>
+                <li class="font-montserrat text-[0.85rem]">
+                  <span class="mr-1 font-bold">GBP:</span> Buying: I34.55
+                </li>
+                <li class="font-montserrat text-[0.85rem]">
+                  <span class="mr-1 font-bold">EURO:</span>Buying: 136.17
+                </li>
+                <li class="font-montserrat text-[0.85rem]">
+                  <span class="mr-1 font-bold">Indian Rupee:</span>Buying: 1.2552
+                </li>
+                <li class="font-montserrat text-[0.85rem]">
+                  <span class="mr-1 font-bold">Danish Kroner:</span>Buying: 13.4965
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="flex flex-col justify-center pt-16">
+          <div class="search flex justify-center mb-20">
+            <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
+              <form action="" class="max-w-[75%] mx-auto">
+                <input
+                  class="w-full"
+                  type="search"
+                  placeholder="I am looking for...'"
+                />
+              </form>
+            </div>
+          </div>
+          <div
+            class="footer-img bg-[url('../images/footer-img.svg')] w-full min-h-[150px] bg-cover bg-no-repeat"
+          ></div>
+          <div class="bg-nbk-yellow pt-16 pb-8 flex justify-center">
+            <div
+              class="container max-[1400px]:px-6 min-[320px] footer-links grid grid-cols-five-columns gap-4 justify-center"
+            >
+              <ul>
+                <h3 class="font-poppins font-bold text-base">For You</h3>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Open an Account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Get a Loan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Invest</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Get a Card</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <h3 class="font-poppins font-bold text-base">For Your Biashara</h3>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Open an Account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Get a Loan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Trade Finance</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <h3 class="font-poppins font-bold text-base">For Corporate</h3>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Accounts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Financing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Services</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <h3 class="font-poppins font-bold text-base">Quick Links</h3>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Complaint Handling</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Service Charter</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <h3 class="font-poppins font-bold text-base">Banking Hours</h3>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Mon – Fri : 8.30 am - 4.00 pm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Sat : 8.30 am - 12.00 pm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Sun : Closed</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-montserrat text-xs font-medium text-nbk-brown"
+                    >Public Holidays : Closed</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom bg-nbk-brown text-white text-[0.78rem] py-8">
+            <div class="container max-[1400px]:px-6 min-[320px] mx-auto grid grid-cols-2">
+              <div class="copyright">
+                <ul class="flex flex-wrap gap-2">
+                  <li>Regulated by the Central Bank of Kenya</li>
+                  <li>|</li>
+                  <li class=""> 2023 National Bank Limited. All Rights Reserved.</li>
+                </ul>
+              </div>
+              <div class="terms">
+                <ul class="flex flex-wrap justify-end mb-4 gap-2">
+                  <li><a href="">Terms and Conditions</a></li>
+                  <li>|</li>
+                  <li><a href="">Disclaimer</a></li>
+                  <li>|</li>
+                  <li><a href="">Tarrif Guide</a></li>
+                  <li>|</li>
+                  <li><a href=""> Internet Privacy Policy</a></li>
+                </ul>
+                <ul class="flex flex-wrap gap-2 justify-end">
+                  <li><a href=""><img src="images/fb.svg" alt="Icon" class="w-[27px] h-[27px] border-white border-2 rounded-full p-[4px]"></a></li>
+                  <li><a href=""><img src="images/twitter.svg" alt="Icon" class="w-[27px] h-[27px] border-white border-2 rounded-full p-[4px]"></a></li>
+                  <li><a href=""><img src="images/youtube.svg" alt="Icon" class="w-[27px] h-[27px] border-white border-2 rounded-full p-[4px]"></a></li>
+                  <li><a href=""><img src="images/ig.svg" alt="Icon" class="w-[27px] h-[27px] border-white border-2 rounded-full p-[4px]"></a></li>
+                  <li><a href=""><img src="images/linkedin.svg" alt="Icon" class="w-[27px] h-[27px] border-white border-2 rounded-full p-[4px]"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
 
     <script src="tailwind.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

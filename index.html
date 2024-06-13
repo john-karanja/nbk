@@ -16,9 +16,9 @@
   </head>
   <body>
     <div
-      class="top-menu flex items-center justify-end min-h-[70px] text-[0.75rem] py-4"
+      class="top-menu bg-[#3c251f] text-[#ffaf2e] text-nbk-yellow-text  flex items-center justify-end min-h-[70px] text-[0.75rem] py-4 max-[1050px]:hidden"
     >
-      <div class="container mx-auto">
+      <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
         <ul class="flex gap-5 justify-end">
           <li><a href="#">Investor Relations</a></li>
           <li><a href="#">National Online Banking</a></li>
@@ -30,14 +30,52 @@
         </ul>
       </div>
     </div>
+    <!-- SideNav -->
     <div
-      class="main-menu min-h-[100px] flex items-center justify-center text-[0.89rem]"
+      class="main-menu flex items-center justify-center text-[0.85rem]"
     >
-      <div class="container mx-auto flex items-center justify-between">
+      <div id="mySidenav" class="sidenav text-sm font-montserrat font-medium">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="sidenav-top bg-white px-10 py-6">
+          <ul class="text-nbk-brown font-medium">
+            <li class="my-2"><a href="#">Home</a></li>
+            <hr>
+            <li class="my-2"><a href="#">About Bancassurance</a></li>
+            <hr>
+            <li class="my-2"><a href="#">Personal Solutions</a></li>
+            <hr>
+            <li class="my -2"><a href="#">Corporate Solutions</a></li>
+          </ul> 
+        </div>
+ 
+        <div class="sidenav-bottom bg-nbk-brown text-nbk-yellow-text text-sm font-montserrat font-medium py-4 h-full">
+          <ul class= "px-10">
+            <li class="my-2"><a href="#">Investor Relations</a></li>
+            <hr>
+            <li class="my-2"><a href="#">National Online Banking</a></li>
+            <hr>
+            <li class="my-2"><a href="#">NBK Bancassurance Intermediary Limited</a></li>
+            <hr>
+            <li class="my-2"><a href="#">Property Sales</a></li>
+            <hr>
+            <li class="my-2"><a href="#"> Natbank Investments </a></li>
+            <hr>
+            <li class="my-2"><a href="#">Treasury Services </a></li>
+            <hr>
+            <li class="my-2"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End SideNav -->
+    
+      <div class="container max-[1400px]:px-6 max-[1200px]:px-6 mx-auto flex items-center justify-between py-4 text-[0.9rem]">
         <div class="logo-container">
           <img src="/images/logo.svg" alt="Logo" class="w-[165px]" />
         </div>
-        <div class="main-menu-ul">
+        <div class="main-menu-ul max-[1050px]:hidden">
           <ul class="flex gap-8">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About Bancassurance</a></li>
@@ -50,7 +88,7 @@
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
-                  stroke="currentColor"
+                  stroke="#FFAA00"
                   class="size-6"
                 >
                   <path
@@ -63,14 +101,35 @@
             </li>
           </ul>
         </div>
+        <div class="flex items-center gap-8 min-[1050px]:hidden">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#FFAA00"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </a>
+          <span class="" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+
       </div>
     </div>
-    <header class="flex items-center justify-start]">
-      <div class="container mx-auto">
+    <header class="flex items-center justify-start] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../images/header-img.jpg')] bg-cover bg-no-repeat min-h[450px]">
+      <div class="container max-[1400px]:px-6 max-[1200px]:px-6 min-[320px] mx-auto">
         <div
-          class="header-content flex justify-center items-center flex-col max-w-[500px] min-h-[246px] p-8"
+          class="header-content flex justify-center items-start flex-col max-w-[500px] min-h-[246px] p-8 bg-nbk-brown/[0.8]"
         >
-          <h1 class="text-[2rem] relative">
+          <h1 class="text-[2rem] max-[768px]:text-[1.5rem] font-poppins font-extrabold text-nbk-yellow-text before:content[''] relative before:absolute before:h-[80px] before:w-[6px] before:bg-[#ffaf2e] before:left-[-32px] before:top[15px] ">
             NBK Bancassurance Intermediary Limited
           </h1>
           <p class="text-white max-w-[42ch] mt-4">
@@ -81,8 +140,8 @@
       </div>
     </header>
     <!-- Personal Solutions -->
-    <section class="section py-20 personal-solutions mt-8">
-      <div class="container mx-auto">
+    <section class="section py-8 personal-solutions mt-8">
+      <div class="container max-[1400px]:px-6 max-[1200px]:px-6 min-[320px] mx-auto">
         <div
           class="section-heading flex flex-col justify-center items-center text-center"
         >
@@ -143,8 +202,8 @@
     </section>
 
     <!-- Corporate Solutions -->
-    <section class="section py-20 personal-solutions mt-8 bg-[#F5F0F0]">
-      <div class="container mx-auto">
+    <section class="section py-8 personal-solutions mt-8 bg-[#F5F0F0]">
+      <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
         <div
           class="section-heading flex flex-col justify-center items-center text-center"
         >
@@ -205,7 +264,7 @@
     </section>
     <!-- Forex -->
     <section class="section bg-[#F9EBE8] py-5">
-      <div class="container mx-auto">
+      <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
         <div
           class="heading-section flex flex-wrap gap-x-1.5 justify-between items-center"
         >
@@ -233,7 +292,7 @@
     <!-- Footer -->
     <footer class="flex flex-col justify-center pt-16">
       <div class="search flex justify-center mb-20">
-        <div class="container mx-auto">
+        <div class="container max-[1400px]:px-6 min-[320px] mx-auto">
           <form action="" class="max-w-[75%] mx-auto">
             <input
               class="w-full"
@@ -248,7 +307,7 @@
       ></div>
       <div class="bg-nbk-yellow pt-16 pb-8 flex justify-center">
         <div
-          class="container footer-links grid grid-cols-five-columns gap-4 justify-center"
+          class="container max-[1400px]:px-6 min-[320px] footer-links grid grid-cols-five-columns gap-4 justify-center"
         >
           <ul>
             <h3 class="font-poppins font-bold text-base">For You</h3>
@@ -394,7 +453,7 @@
         </div>
       </div>
       <div class="footer-bottom bg-nbk-brown text-white text-[0.78rem] py-8">
-        <div class="container mx-auto grid grid-cols-2">
+        <div class="container max-[1400px]:px-6 min-[320px] mx-auto grid grid-cols-2">
           <div class="copyright">
             <ul class="flex flex-wrap gap-2">
               <li>Regulated by the Central Bank of Kenya</li>
